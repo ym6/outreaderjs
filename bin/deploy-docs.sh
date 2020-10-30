@@ -28,7 +28,7 @@ else
   git init
   git add -A
   git commit -m 'vuepress build from local'
-  git push -f git@github.com:jiegouyun/outreaderjs.git master:gh-pages
+  git push -f git@github.com:ym6/outreaderjs.git master:gh-pages
 fi
 
 rm -fr .git
