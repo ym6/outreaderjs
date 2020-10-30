@@ -10,7 +10,7 @@ yarn run build:docs
 cd docs/.vuepress/dist
 
 # add customized domain
-echo 'cn.outreader.com' > CNAME
+# echo 'cn.outreader.com' > CNAME
 
 
 if [[ ${GIHUB_TOKEN} ]]; then
