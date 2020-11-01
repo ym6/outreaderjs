@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>读取数据 | OutReader</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="数据读取说明">
+    
+    <link rel="preload" href="/outreaderjs/assets/css/0.styles.6e25b4c2.css" as="style"><link rel="preload" href="/outreaderjs/assets/js/app.c0aa743e.js" as="script"><link rel="preload" href="/outreaderjs/assets/js/2.783b1402.js" as="script"><link rel="preload" href="/outreaderjs/assets/js/12.a7b1c5ad.js" as="script"><link rel="prefetch" href="/outreaderjs/assets/js/10.cfb39248.js"><link rel="prefetch" href="/outreaderjs/assets/js/11.b67c6727.js"><link rel="prefetch" href="/outreaderjs/assets/js/13.4229fabb.js"><link rel="prefetch" href="/outreaderjs/assets/js/14.0910fa58.js"><link rel="prefetch" href="/outreaderjs/assets/js/3.4bad6084.js"><link rel="prefetch" href="/outreaderjs/assets/js/4.6fd1ef01.js"><link rel="prefetch" href="/outreaderjs/assets/js/5.da37f56e.js"><link rel="prefetch" href="/outreaderjs/assets/js/6.d09cb291.js"><link rel="prefetch" href="/outreaderjs/assets/js/7.8d0d2fcf.js"><link rel="prefetch" href="/outreaderjs/assets/js/8.f033bb74.js"><link rel="prefetch" href="/outreaderjs/assets/js/9.53c1a555.js">
+    <link rel="stylesheet" href="/outreaderjs/assets/css/0.styles.6e25b4c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/outreaderjs/" class="home-link router-link-active"><!----> <span class="site-name">OutReader</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/outreaderjs/download/" class="nav-link">
+  软件下载
+</a></div><div class="nav-item"><a href="/outreaderjs/guide/" class="nav-link router-link-active">
+  技术手册
+</a></div><div class="nav-item"><a href="/outreaderjs/contact/" class="nav-link">
+  联系我们
+</a></div><div class="nav-item"><a href="https://github.com/jiegouyun/outreaderjs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/outreaderjs/download/" class="nav-link">
+  软件下载
+</a></div><div class="nav-item"><a href="/outreaderjs/guide/" class="nav-link router-link-active">
+  技术手册
+</a></div><div class="nav-item"><a href="/outreaderjs/contact/" class="nav-link">
+  联系我们
+</a></div><div class="nav-item"><a href="https://github.com/jiegouyun/outreaderjs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>OutReader 使用说明</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/outreaderjs/guide/" aria-current="page" class="sidebar-link">操作指南</a></li><li><a href="/outreaderjs/guide/extract.html" aria-current="page" class="active sidebar-link">读取数据</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/outreaderjs/guide/extract.html#介绍" class="sidebar-link">介绍</a></li><li class="sidebar-sub-header"><a href="/outreaderjs/guide/extract.html#文件缺失" class="sidebar-link">文件缺失</a></li></ul></li><li><a href="/outreaderjs/guide/structure.html" class="sidebar-link">查看模型</a></li><li><a href="/outreaderjs/guide/compare.html" class="sidebar-link">对比模型</a></li><li><a href="/outreaderjs/guide/update.html" class="sidebar-link">更新日志</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="读取数据"><a href="#读取数据" class="header-anchor">#</a> 读取数据</h1> <h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <p>OutReader 客户端读取指定文件夹内特定的文件内的数据进行汇总，根据文件扩展名自动判断结构计算软件类型，<code>.out</code>文件类型对应 YJK 软件，<code>.OUT</code>文件类型对应 PKPM 软件。针对 YJK 和 PKPM 所读取的文件及文件内容如下：</p> <table><thead><tr><th style="text-align:center;">文件名</th> <th style="text-align:left;">YJK（.out）</th> <th style="text-align:left;">PKPM（.OUT）</th></tr></thead> <tbody><tr><td style="text-align:center;">wmass</td> <td style="text-align:left;">- 项目信息 <br> - 结构信息 <br> - 风荷载 <br> - 地震作用 <br> - 质量比 <br> - 刚度比 <br> - 刚重比 <br> - 剪重比调整系数 <br> - 抗剪承载力比</td> <td style="text-align:left;">- 项目信息 <br> - 结构信息 <br> - 风荷载 <br> - 地震作用 <br> - 质量比 <br> - 刚度比 <br> - 刚重比 <br> - 抗剪承载力比</td></tr> <tr><td style="text-align:center;">wdisp</td> <td style="text-align:left;">- 楼层位移 <br> - 层间位移角 <br> - 位移比 <br> - 层间位移比</td> <td style="text-align:left;">- 楼层位移 <br> - 层间位移角 <br> - 位移比 <br> - 层间位移比</td></tr> <tr><td style="text-align:center;">wzq</td> <td style="text-align:left;">- 周期 <br> - 平动系数 <br> - 质量参与系数 <br> - 地震作用内力</td> <td style="text-align:left;">- 周期 <br> - 平动系数 <br> - 质量参与系数 <br> - 地震作用内力 <br> - 剪重比调整系数</td></tr> <tr><td style="text-align:center;">wv02q</td> <td style="text-align:left;">- 规定水平力下弯矩分配 <br> - 外框剪力分配 <br> - 外框剪力调整系数 <br> - 单向少墙分析</td> <td style="text-align:left;">- 规定水平力下弯矩分配 <br> - 外框剪力分配 <br> - 外框剪力调整系数</td></tr> <tr><td style="text-align:center;">wpj</td> <td style="text-align:left;">- 柱定义 <br> - 柱属性 <br> - 柱轴压比 <br> - 柱配筋率 <br> - 柱抗剪承载力</td> <td style="text-align:left;">- 柱属性 <br> - 柱轴压比 <br> - 柱配筋率 <br> - 柱抗剪承载力</td></tr> <tr><td style="text-align:center;">上部结构工程量</td> <td style="text-align:left;">- 混凝土用量 <br> - 型钢用量</td> <td style="text-align:left;">- 混凝土用量 <br> - 型钢用量</td></tr> <tr><td style="text-align:center;">全楼钢筋用量</td> <td style="text-align:left;">- 钢筋用量</td> <td style="text-align:left;">- 钢筋用量</td></tr></tbody></table> <p><code>wmass</code>、<code>wdisp</code>、<code>wzq</code>、<code>wv02q</code>、<code>wpj</code>在结构计算完成后自动生成，</p> <p><code>上部结构工程量</code>和<code>全楼钢筋用量</code>需要在计算软件中操作指定输出并保存至计算结果文件夹内。
+因为不同结构计算软件输出的结果文件内容不完全相同，不同软件读取的数据量不完全相同，会有部分差别。</p> <h2 id="文件缺失"><a href="#文件缺失" class="header-anchor">#</a> 文件缺失</h2> <p>OutReader 客户端支持在文件数量不完整时读取数据，缺失文件内容无数据显示。
+当文件夹内只有<code>上部结构工程量</code>和<code>全楼钢筋用量</code>两个文件时，因为这两个文件的文件类型是<code>.txt</code>，软件无法自动判断结构计算软件类型，会弹出对话框由用户手动选择。</p> <p><img src="/outreaderjs/extract/lackFiles.png" alt="image"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/outreaderjs/guide/" class="prev router-link-active">
+        操作指南
+      </a></span> <span class="next"><a href="/outreaderjs/guide/structure.html">
+        查看模型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/outreaderjs/assets/js/app.c0aa743e.js" defer></script><script src="/outreaderjs/assets/js/2.783b1402.js" defer></script><script src="/outreaderjs/assets/js/12.a7b1c5ad.js" defer></script>
+  </body>
+</html>
