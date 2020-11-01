@@ -2,7 +2,8 @@ name: Sync
 
 on:
   push:
-    branches: [master, gh-pages]
+    paths:
+      - 'docs/**'
 
 jobs:
   build:
