@@ -16,7 +16,7 @@ GitHub：[an-lee](https://github.com/an-lee)
 
 微信：
 
-<img src='./contact/an-lee.jpeg' width="500">
+<img src='/outreaderjs/contact/an-lee.jpeg' width="500">
 
 - **杨名流**
 
@@ -26,7 +26,7 @@ GitHub：[ym6](https://github.com/ym6)
 
 微信：
 
-<img src='./contact/ym6.jpeg' width="500">
+<img src='/outreaderjs/contact/ym6.jpeg' width="500">
 
 - **韩艳波**
 
@@ -36,4 +36,4 @@ GitHub：[meiputi](https://github.com/meiputi)
 
 微信：
 
-<img src='./contact/hyb.jpeg' width="500">
+<img src='/outreaderjs/contact/hyb.jpeg' width="500">
