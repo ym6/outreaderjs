@@ -2,8 +2,7 @@ name: Sync
 
 on:
   push:
-    paths:
-      - 'docs/**'
+    branchs: [gh-pages]
 
 jobs:
   build:
