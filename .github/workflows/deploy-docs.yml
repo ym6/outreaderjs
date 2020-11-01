@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "Deploying"
           bin/deploy-docs.sh
-  syncToGitee:
+  sync-to-gitee:
     runs-on: ubuntu-latest
     needs: deploy-docs
     steps:
